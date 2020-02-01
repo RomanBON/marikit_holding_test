@@ -8,6 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Typescript
 - Eslint
 
+## Result
+[https://romanbon.github.io/marikit_holding_test/](https://romanbon.github.io/marikit_holding_test/)
+
+![](marikit_holding_preview.png?raw=true)
+
 ## Available Scripts
 
 In the project directory, you can run:
