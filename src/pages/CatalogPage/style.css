@@ -1,0 +1,10 @@
+.CatalogPage {
+  display: flex;
+  flex: 1 1;
+}
+
+@media (max-width: 850px) {
+  .CatalogPage {
+    flex: auto;
+  }
+}

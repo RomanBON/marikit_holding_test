@@ -1,0 +1,14 @@
+.InputNumberQuantity__input._increased {
+  border-color: var(--danger-color);
+}
+
+.InputNumberQuantity__input._decreased {
+  border-color: var(--green-color);
+}
+
+.InputNumberQuantity__warning {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px dashed var(--danger-color);
+  color: var(--danger-color);
+}

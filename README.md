@@ -1,4 +1,12 @@
+# Completed test task from Marikit Holdings LTD
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## List of technologies used
+
+- React
+- Typescript
+- Eslint
 
 ## Available Scripts
 

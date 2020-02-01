@@ -1,0 +1,32 @@
+.Table {
+}
+
+.Table__table {
+  width: 100%;
+  text-align: left;
+  border-radius: 4px 4px 0 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.Table__th,
+.Table__td {
+  padding: 15px;
+  overflow-wrap: break-word;
+}
+
+.Table__thead > tr > th {
+  background: var(--light-gray-color);
+  border-bottom: 1px solid var(--dark-gray-color);
+}
+
+.Table__table-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.Table__table-empty {
+  font-size: 22px;
+}

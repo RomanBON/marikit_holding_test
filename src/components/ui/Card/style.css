@@ -1,0 +1,35 @@
+.Card {
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+
+.Card__title,
+.Card__content {
+  padding: 10px;
+}
+
+.Card__title {
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.Card._collapsible .Card__title {
+  cursor: pointer;
+}
+
+.Card._collapsible .Card__title:before {
+  content: '>';
+  margin-right: 10px;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.Card._collapsed .Card__title:before {
+  transform: rotate(0);
+}
+
+.Card._collapsed .Card__content {
+  height: 0;
+  padding: 0;
+}

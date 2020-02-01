@@ -1,0 +1,11 @@
+.Loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.Loader__img {
+  width: 100px;
+  height: 100px;
+}
