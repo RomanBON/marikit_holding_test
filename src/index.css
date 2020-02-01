@@ -1,13 +1,15 @@
 body {
   margin: 0;
   background-color: var(--main-bg-color);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
 }
 
 :root {
   /* Colors */
   --main-bg-color: var(--true-white-color);
   --true-white-color: #ffffff;
+  --true-black-color: #000000;
   --primary-color: #2196f3;
   --secondary-color: #40a9ff;
   --danger-color: #ff4d4f;
@@ -15,4 +17,8 @@ body {
   --dark-gray-color: #4a4a4a;
   --light-gray-color: #dedede;
   --green-color: #228b22;
+  
+  /* Fonts */
+  --font-family-base: 'Open Sans', sans-serif;
+  --font-size-base: 16px;
 }

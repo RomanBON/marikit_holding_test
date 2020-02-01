@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx src/",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
