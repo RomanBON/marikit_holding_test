@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "021d234880cd6bbf1b4a1ba5f3a95a1a",
+    "revision": "a8d9ceec6927afae0589102cdc35e73f",
     "url": "/marikit_holding_test/index.html"
   },
   {
-    "revision": "009479cfcfbe16b7c2da",
-    "url": "/marikit_holding_test/static/css/main.22b55418.chunk.css"
+    "revision": "0337e45e689a5d56e197",
+    "url": "/marikit_holding_test/static/css/main.cf8b0a37.chunk.css"
   },
   {
     "revision": "bb879b03f25b14c373df",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marikit_holding_test/static/js/2.b8389005.chunk.js.LICENSE"
   },
   {
-    "revision": "009479cfcfbe16b7c2da",
+    "revision": "0337e45e689a5d56e197",
     "url": "/marikit_holding_test/static/js/main.a729859d.chunk.js"
   },
   {

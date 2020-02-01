@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marikit_holding_test/precache-manifest.b7754a953fd447f73c6f35697b600c06.js"
+  "/marikit_holding_test/precache-manifest.c255fac6fe900e77abb82285e2038c4e.js"
 );
 
 self.addEventListener('message', (event) => {
