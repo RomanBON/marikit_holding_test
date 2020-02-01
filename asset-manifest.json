@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/marikit_holding_test/static/css/main.22b55418.chunk.css",
+    "main.js": "/marikit_holding_test/static/js/main.a729859d.chunk.js",
+    "main.js.map": "/marikit_holding_test/static/js/main.a729859d.chunk.js.map",
+    "runtime-main.js": "/marikit_holding_test/static/js/runtime-main.00836308.js",
+    "runtime-main.js.map": "/marikit_holding_test/static/js/runtime-main.00836308.js.map",
+    "static/js/2.b8389005.chunk.js": "/marikit_holding_test/static/js/2.b8389005.chunk.js",
+    "static/js/2.b8389005.chunk.js.map": "/marikit_holding_test/static/js/2.b8389005.chunk.js.map",
+    "index.html": "/marikit_holding_test/index.html",
+    "precache-manifest.b7754a953fd447f73c6f35697b600c06.js": "/marikit_holding_test/precache-manifest.b7754a953fd447f73c6f35697b600c06.js",
+    "service-worker.js": "/marikit_holding_test/service-worker.js",
+    "static/css/main.22b55418.chunk.css.map": "/marikit_holding_test/static/css/main.22b55418.chunk.css.map",
+    "static/js/2.b8389005.chunk.js.LICENSE": "/marikit_holding_test/static/js/2.b8389005.chunk.js.LICENSE",
+    "static/media/spinner.svg": "/marikit_holding_test/static/media/spinner.00e1caa6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00836308.js",
+    "static/js/2.b8389005.chunk.js",
+    "static/css/main.22b55418.chunk.css",
+    "static/js/main.a729859d.chunk.js"
+  ]
+}
