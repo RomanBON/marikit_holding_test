@@ -6,8 +6,11 @@ import './style.css';
 
 
 type Props = {
+  /** label text displayed after */
   addon?: React.ReactNode;
+  /** text of warning message */
   warningMessage?: string;
+  /** flag showing price status */
   isIncreased?: boolean;
 } & InputHTMLAttributes<HTMLInputElement>;
 

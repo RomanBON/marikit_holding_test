@@ -16,9 +16,13 @@ interface IDataSource {
 }
 
 type Props = {
+  /** columns of table */
   columns: IColumn[];
+  /** data record array to be displayed */
   dataSource: IDataSource[];
+  /** text to be displayed with empty data */
   emptyText?: string;
+  /** text to be displayed in last table footer cell */
   total?: string;
 } & TableHTMLAttributes<HTMLTableElement>;
 
@@ -33,61 +37,80 @@ const Table = (props: Props) => {
   } = props;
   const baseClassName = cx(className, Table.displayName);
 
+  const thead = (
+    <thead className={`${Table.displayName}__thead`}>
+      <tr className={`${Table.displayName}__tr`}>
+        {columns.map(column => (
+          <th
+            key={column.key}
+            className={`${Table.displayName}__th`}
+          >
+            {column.title}
+          </th>
+        ))}
+      </tr>
+    </thead>
+  );
+  const tbody = (
+    <tbody className={`${Table.displayName}__tbody`}>
+      {dataSource.length ? (
+        dataSource.map(data => (
+          <tr
+            key={data.key}
+            className={`${Table.displayName}__tr`}
+          >
+            {columns.map(column => (
+              <td
+                key={`${column.key}_${data.key}`}
+                className={`${Table.displayName}__td`}
+              >
+                {column && data[column.key]}
+              </td>
+            ))}
+          </tr>
+        ))
+      ) : null}
+    </tbody>
+  );
+  const tfooter = (total && dataSource.length
+    ? (
+      <tfoot>
+        <tr>
+          {columns.map((column, index) => (
+            <td
+              key={`tfoot_${column.key}`}
+              className={`${Table.displayName}__td`}
+            >
+              {columns.length - 1 === index && total}
+            </td>
+          ))}
+        </tr>
+      </tfoot>
+    )
+    : null
+  );
+  const emptySource = !dataSource.length
+    ? (
+      <div className={`${Table.displayName}__table-placeholder`}>
+        <div className={`${Table.displayName}__table-empty`}>
+          {emptyText}
+        </div>
+      </div>
+    )
+    : null
+  ;
+
   return (
     <div className={baseClassName}>
       <table className={`${Table.displayName}__table`} {...restProps}>
-        <thead className={`${Table.displayName}__thead`}>
-          <tr className={`${Table.displayName}__tr`}>
-            {columns.map(column => (
-              <th key={column.key}
-                  className={`${Table.displayName}__th`}
-              >
-                {column.title}
-              </th>
-            ))}
-          </tr>
-        </thead>
+        {thead}
 
-        <tbody className={`${Table.displayName}__tbody`}>
-          {dataSource.length ? (
-            dataSource.map(data => (
-              <tr key={data.key}
-                  className={`${Table.displayName}__tr`}
-              >
-                {columns.map(column => (
-                  <td key={`${column.key}_${data.key}`}
-                      className={`${Table.displayName}__td`}
-                  >
-                    {column && data[column.key]}
-                  </td>
-                ))}
-              </tr>
-            ))
-          ) : null}
-        </tbody>
+        {tbody}
 
-        {total && dataSource.length ? (
-          <tfoot>
-            <tr>
-              {columns.map((column, index) => (
-                <td key={`tfoot_${column.key}`}
-                    className={`${Table.displayName}__td`}
-                >
-                  {columns.length - 1 === index && total}
-                </td>
-              ))}
-            </tr>
-          </tfoot>
-        ) : null}
+        {tfooter}
       </table>
 
-      {!dataSource.length ? (
-        <div className={`${Table.displayName}__table-placeholder`}>
-          <div className={`${Table.displayName}__table-empty`}>
-            {emptyText}
-          </div>
-        </div>
-      ) : null}
+      {emptySource}
     </div>
   );
 };

@@ -5,7 +5,9 @@ import './style.css';
 
 
 type Props = {
+  /** stylistic button type */
   styleType?: 'primary' | 'danger';
+  /** flag to fit button width to its parent width */
   isBlock?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 

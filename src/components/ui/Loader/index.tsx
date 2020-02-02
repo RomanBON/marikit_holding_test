@@ -6,6 +6,7 @@ import './style.css';
 
 
 type Props = {
+  /** additional class */
   className?: string;
 };
 

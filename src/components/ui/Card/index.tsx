@@ -5,10 +5,15 @@ import './style.css';
 
 
 type Props = {
+  /** card title */
   title: string;
+  /** additional class */
   className?: string;
+  /** children node */
   children?: React.ReactNode;
+  /** flag to make card collapsible */
   isCollapsible?: boolean;
+  /** flag indicating initial state of collapse */
   isCollapsed?: boolean;
 };
 
